@@ -1,0 +1,31 @@
+@use 'sass:map';
+@use '../../scss/base/_variables.scss';
+@use '../../scss/base/_mixinsfunc.scss';
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    position: fixed;
+    z-index: 9999;
+    align-items: center;
+    .navbarContainer{
+      z-index: 9999;
+    }
+  }
+
+@include mixinsfunc.respond-to("tablet",1023px) {
+  .navbar {
+    padding: 20px 80px;
+  }
+}
+
+@include mixinsfunc.respond-to("desktop") {
+  .navbar {
+    padding: 20px 80px;
+    .navbarContainer{
+      display: flex;
+    }
+  }
+}
+

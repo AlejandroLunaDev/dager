@@ -1,0 +1,279 @@
+@use 'sass:map';
+@use '../../../../../scss/base/variables';
+@use '../../../../../scss/base/_mixinsfunc.scss';
+@use '../../../../../scss/animations/animations';
+.skills {
+  background: variables.$primary-dark;
+  position: relative;
+  z-index: 7;
+  overflow: hidden;
+  padding: 0 10px;
+
+
+
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+
+    h1 {
+      color: variables.$secondary;
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: capitalize;
+    }
+    p {
+      color: variables.$primary-bright;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .frontend,
+  .backend {
+    margin-top: 20px;
+    background: #3b043e98;
+    z-index: 7;
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+ 
+
+    h1 {
+      color: variables.$secondary;
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+  }
+
+  .frontendListIcon,
+  .backendListIcon {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+
+      figure {
+        width: 30px;
+        height: 30px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      span {
+        color: variables.$primary-bright;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 10px;
+        opacity: 1;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease, transform 0.9s ease;
+      }
+
+      &:hover span {
+        opacity: 1;
+        transform: translateY(30px);
+      }
+
+      &:not(:hover) span {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+    }
+  }
+  .frontendList,
+  .backendList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 5;
+    position: relative;
+    li {
+      display: flex;
+      justify-content: space-between;
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: variables.$secondary;
+    }
+    p {
+      color: variables.$primary-bright;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  .backendListIcon {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.large {
+  width: 30px !important;
+  height: 30px !important;
+}
+.divider,
+.divider1 {
+  z-index: -1;
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  display: none;
+}
+.divider {
+  left: 5%;
+  top: 15%;
+  background-color: variables.$primary-bright;
+  border-radius: 50%;
+  background: rgb(147, 147, 147);
+  background: linear-gradient(
+    240deg,
+    rgba(147, 147, 147, 1) 25%,
+    variables.$primary-dark 75%
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+.divider1 {
+  right: 5%;
+  top: 5%;
+  background-color: white;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background: rgb(226, 156, 6);
+  background: linear-gradient(
+    48deg,
+    rgba(241, 174, 28, 1) 25%,
+    variables.$primary-dark 75%
+  );
+}
+
+@include mixinsfunc.respond-to('tablet', 1023px) {
+  .skills {
+    padding: 0 20px;
+    header {
+      margin-top: 25px;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    main {
+      flex-direction: column;
+  
+      .frontend,
+      .backend {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .frontendListIcon,
+      .backendListIcon {
+  
+        li {
+          figure {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      .frontendList,
+      .backendList {
+        li {
+          h4 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .large {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+}
+
+@include mixinsfunc.respond-to('desktop') {
+  .skills {
+    padding: 0 60px;
+    min-height: 100vh;
+    
+    header {
+      margin-top: 25px;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+    main {
+      flex-direction: row;
+      gap: 40px;
+  
+      .frontend,
+      .backend {
+        padding: 30px;
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+      .frontendListIcon, 
+      .backendListIcon {
+  
+        li {
+          figure {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .frontendList,
+      .backendList {
+        gap: 60px;
+        li {
+          h4 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .large {
+      width: 60px !important;
+      height: 60px !important;  
+    }
+  /*   .divider,
+    .divider1 {
+      display: block;
+      } */
+    }
+      }

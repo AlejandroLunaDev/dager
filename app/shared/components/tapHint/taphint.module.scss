@@ -1,0 +1,21 @@
+
+@use '../../../scss/animations/animations';
+
+.tap-hint{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    opacity: 0;
+    animation:fadeIn 1s ease forwards, 2.35s linear 0s infinite normal none running scrollDown;
+    animation-delay: 1000ms;
+}
+
+.tap-icon {
+    width: 20px;
+    height: 20px;
+
+}

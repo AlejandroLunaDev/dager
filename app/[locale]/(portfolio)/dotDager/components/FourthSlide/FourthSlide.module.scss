@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use '../../../../../scss/base/variables.scss';
+@use '../../../../../scss/base/_mixinsfunc.scss';
+@use '../../../../../scss/animations/animations';
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 20px;
+  height: 100dvh;
+  header {
+    h1 {
+      color: variables.$secondary;
+      font-size: 2rem;
+      letter-spacing: -3px;
+      line-height: 1.6;
+      font-weight: 800;
+      padding-top: 20px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+  
+  
+}
+

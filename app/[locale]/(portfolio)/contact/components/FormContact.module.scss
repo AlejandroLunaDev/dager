@@ -1,0 +1,141 @@
+@use "sass:map";
+@use '../../../../scss/base/variables';
+@use '../../../../scss/base/_mixinsfunc.scss';
+.formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    
+    .form {
+      width: 100%;
+      padding: 40px;
+      background-color: variables.$primary-dark;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      .iconsform {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      header {
+        margin-bottom: 20px;
+        text-align: center;
+        
+        h1 {
+          font-size: 2.5rem;
+          color: variables.$secondary;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 1.2rem;
+          color: variables.$primary-bright;
+          line-height: 1.5;
+        }
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        
+        div {
+          margin-bottom: 20px;
+  
+          label {
+            font-size: 1rem;
+            color: variables.$secondary;
+            display: block;
+            margin-bottom: 5px;
+          }
+  
+          input,
+          textarea {
+            background-color: variables.$primary-dark;
+            width: 100%;
+            padding: 10px 5px;
+            font-size: 1rem;
+            border: none;
+            border-bottom: 2px solid variables.$secondary;
+            outline: none;
+            transition: border-color 0.3s;
+            color: variables.$primary-bright;
+  
+            &:focus {
+              border-bottom: 2px solid variables.$primary-bright;
+            }
+          }
+  
+          textarea {
+            resize: vertical;
+            min-height: 100px;
+          }
+  
+          .error {
+            color: #ff0000;
+            font-size: 0.9rem;
+            margin-top: 5px;
+          }
+        }
+
+      }
+  
+      .thankYouMessage {
+        text-align: center;
+  
+        h2 {
+          font-size: 2rem;
+          color: variables.$secondary;
+        }
+  
+        p {
+          font-size: 1.2rem;
+          color: variables.$primary-bright;
+        }
+      }
+    }
+  
+    .connect {
+      display: none;
+
+
+  }
+}
+
+@include mixinsfunc.respond-to('desktop') {
+    .formContainer {
+      .form{
+        width: 50%;
+        max-height: 100vh;
+        .iconsform {
+          display: none;
+        }
+      }
+      .connect {
+        background-color: variables.$color-primary;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color:variables.$primary-bright;
+        .icons {
+          display: flex;
+          gap: 25px;
+          a{
+              &:hover{
+                  transform: scale(1.2);
+                  transition: 0.3s;
+              }
+          }
+        }
+          img {
+            width: 20dvw;
+          }
+      }
+    }
+}

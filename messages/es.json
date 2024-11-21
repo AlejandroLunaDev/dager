@@ -1,0 +1,160 @@
+{
+  "LandingPage": {
+    "links": {
+      "about": "Sobre",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "tapHint": {
+      "text": "Toca cualquier palabra"
+    },
+    "words": {
+      "hello": "hola",
+      "iam": "soy",
+      "ale": "ale"
+    }
+  },
+  "NavbarMenu": {
+  "links": {
+    "about": "Sobre mí",
+    "projects": "Mis proyectos",
+    "contact": "Contáctame",
+    "home": "Inicio"
+  }
+},
+
+  "PortfolioLanding": {
+    "tapHint": {
+      "text": "Desplazar hacia abajo"
+    }
+  },
+  "FirstSlide": {
+    "title": "Desarrollador Frontend Creativo",
+    "text": "Diseñar y construir productos web simples, intuitivos y escalables es mi vocación."
+  },
+  "SecondSlide": {
+    "design": {
+      "title": "Diseño",
+      "text": "🚀 Como desarrollador frontend, me apasiona combinar creatividad y funcionalidad. Mi misión es diseñar interfaces intuitivas y visualmente atractivas, utilizando herramientas de vanguardia para garantizar una experiencia de usuario excepcional y productos digitales de alta calidad."
+    },
+    "development": {
+      "title": "Desarrollo",
+      "text": "💫 Estoy convencido de que la mejor manera de dominar una habilidad es a través de la práctica constante. Crear no solo es mi trabajo, sino también mi método de aprendizaje. Cada proyecto es una oportunidad para innovar, aprender y perfeccionar mis habilidades, siempre asegurando resultados sobresalientes."
+    }
+  },
+  "ThirdSlide": {
+    "title": "Habilidades",
+    "text": "Idiomas que hablo, herramientas de desarrollo y diseño que especialmente disfruto",
+    "h4": {
+      "languages": "Lenguajes",
+      "frameworks": "Frameworks",
+      "toolsLibraries": "Herramientas y Librerías",
+      "core": "Básicos",
+      "database": "Base de Datos",
+      "api": "API"
+    }
+  },
+  "FourthSlide": {
+    "title": "Experiencia",
+    "milestones": {
+      "0": {
+        "title": "Desarrollador Frontend",
+        "period": "Sep 2024 - Oct 2024",
+        "company": "Workwise",
+        "description": "Como parte de un equipo de 6 personas, contribuí al desarrollo de una aplicación utilizando Next.js, Tailwind y Zustand, integrando un sistema de gestión de vacaciones y control de asistencia a través de APIs. Mis responsabilidades incluyeron diseñar la interfaz de usuario, crear formularios de empleados y solicitudes de vacaciones, y desarrollar un menú circular interactivo con Shadcn. Además, colaboré estrechamente con el equipo de UX/UI para garantizar que el diseño se alineara con los objetivos y requisitos del proyecto."
+      },
+      "1": {
+        "title": "Desarrollador Frontend",
+        "period": "Ago 2024 - Sep 2024",
+        "company": "Mentos",
+        "description": "Desarrollé diseños y funcionalidades principales para las páginas de mentores, reseñas y landing utilizando React y Tailwind. Creé un backend temporal con Node.js y MongoDB en ausencia de un equipo backend, lo que permitió un progreso continuo. Lideré reuniones diarias y coordiné un equipo de 12 personas para cumplir con los plazos del sprint, fomentando la colaboración y una comunicación clara."
+      },
+      "2": {
+        "title": "Desarrollador Frontend",
+        "period": "Jun 2024 - Jul 2024",
+        "company": "No-Country",
+        "description": "Lideré la planificación de sprints y la distribución de tareas, colaborando estrechamente con otros líderes de equipo para garantizar una integración fluida. Resolví desafíos técnicos e implementé TypeScript para mejorar la funcionalidad del calendario, trabajando dentro de un equipo de 15 personas para impulsar el éxito del proyecto."
+      }
+    }
+  },
+  "FifthSlide": {
+    "links": {
+      "projects": {
+        "title": "Construir y Crear",
+        "description": "Diseña y construye productos web simples, intuitivos y escalables",
+        "button": {
+          "text": "Ver mis proyectos",
+          "hoverText": "Ir a Proyectos"
+        }
+      },
+      "cv": {
+        "title": "Curriculum Vitae",
+        "description": "Conoce más sobre mi experiencia profesional y habilidades",
+        "button": {
+          "text": "Descargar Curriculum Vitae",
+          "hoverText": "Descargar CV"
+        }
+      }
+    }
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "description": "Diseñar y construir productos web simples, intuitivos y escalables",
+    "projects": {
+      "numberone": {
+        "name": "Easy Turnos",
+        "technologies": ["react", "typescript", "tailwind", "materialui"],
+        "description": "Easy Turnos es un sitio para profesionales que buscan gestionar citas con sus clientes de manera fácil y rápida. Este proyecto surgió a través de mi participación en una simulación de trabajo en No-Country, donde colaboré con un equipo para desarrollar una solución eficiente y moderna para la gestión de citas.",
+        "demoLink": "https://easy-turnos.vercel.app/",
+        "githubLink": "https://github.com/NoCountrySimulacion/EasyTurnos/tree/frontend",
+        "background": "linear-gradient(0deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+      },
+      "numbertwo": {
+        "name": "SiLoUso",
+        "technologies": [
+          "react",
+          "typescript",
+          "tailwind",
+          "materialui",
+          "express",
+          "mongoDB"
+        ],
+        "description": "SiLoUso es un proyecto Full-Stack de comercio electrónico desarrollado durante mis cursos en Coderhouse. En este proyecto, enfrenté el desafío de aprender nuevas tecnologías y aplicar todo lo que había aprendido para lanzar una tienda en línea completamente funcional.",
+        "demoLink": "https://www.silouso.shop/",
+        "githubLink": "https://github.com/NoCountrySimulacion/SiLoUso/tree/frontend",
+        "background": "linear-gradient(180deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+      },
+      "numberthree": {
+        "name": "Windows 11 Clone",
+        "technologies": ["html", "css", "javascript", "sass"],
+        "description": "Windows11-Clone es un proyecto desarrollado completamente en JavaScript, donde puse a prueba mis habilidades iniciales en el lenguaje. El objetivo era crear una aplicación interactiva y atractiva que replicara la experiencia del sistema operativo Windows 11.",
+        "demoLink": "https://alejandrolunadev.github.io/Windows11Clone/",
+        "githubLink": "https://github.com/NoCountrySimulacion/Windows-11-Clone/tree/frontend",
+        "background": "linear-gradient(0deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+      },
+      "numberfour": {
+        "name": "WorkWise",
+        "technologies": ["nextjs", "typescript", "zustand", "tailwind"],
+        "description": "Es una herramienta que facilita la gestión de recursos humanos a través de un diseño innovador, intuitivo y práctico. Permite el registro de empleados, control de asistencia, justificación, gestión de vacaciones y permisos, con el objetivo de procesar la nómina y el control de asistencia.",
+        "demoLink": "",
+        "githubLink": "https://github.com/AlejandroLunaDev/workwise",
+        "background": "linear-gradient(180deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+      }
+    }
+  },
+  "Contact": {
+    "title": "¡Construyamos algo increíble!",
+    "form": {
+      "title": "Envíame un Mensaje",
+      "subtitle": "¿Tienes alguna pregunta, propuesta o simplemente quieres saludar? No dudes en escribir.",
+
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "message": "Mensaje",
+      "button": {
+        "text": "Enviar",
+        "hoverText": "Enviar Mensaje"
+      }
+    }
+  }
+}

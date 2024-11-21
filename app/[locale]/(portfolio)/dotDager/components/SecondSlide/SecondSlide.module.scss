@@ -1,0 +1,160 @@
+@use 'sass:map';
+@use '../../../../../scss/base/variables';
+@use '../../../../../scss/base/_mixinsfunc';
+
+// Variables de colores y tipografía para reutilizar
+$color-info-background: variables.$primary-dark;
+$design-font-size: 2rem;
+$dev-font-size: 1rem;
+$letter-spacing: 2px;
+$font-weight-bold: 900;
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 7;
+  padding: 1rem;
+  h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight-bold;
+    color: variables.$secondary;
+  }
+
+  .design,
+  .dev {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    object-fit: contain;
+
+    span {
+      text-transform: capitalize;
+      font-size: $design-font-size;
+      letter-spacing: $letter-spacing;
+      font-weight: $font-weight-bold;
+    }
+
+
+    p {
+      font-size: $dev-font-size;
+      color: variables.$primary-bright;
+      line-height: 2rem;
+      text-align: start;
+      display: none;
+    }
+  }
+
+  // .design - Estilo específico para diseño
+  .design {
+    flex-direction: row;
+    justify-content: center;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    span {
+      writing-mode: vertical-lr;
+      height: 140px;
+      color: variables.$secondary;
+    }
+  }
+
+  // .dev - Estilo específico para desarrollo
+  .dev {
+    span {
+      color: variables.$secondary;
+    }
+
+    p {
+      margin-top: 50px;
+      width: 80%;
+    }
+  }
+}
+
+@include mixinsfunc.respond-to("tablet",1023px) {
+  .info {
+    flex-direction: row;
+    .design {
+      span {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    .dev {
+      span {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@include mixinsfunc.respond-to("desktop") {
+    .info {
+      .design {
+        .videoContainer {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 50%;
+          video {
+            width: 40vh;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+          }
+          .toggleButton {
+          background-image:url('/image/botonaudio.png');
+          background-size: cover;
+          background-position: center;
+            color: white;
+            border: none;
+            width: 130px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            &:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+
+            }
+          }
+          
+        }
+        span {
+          font-size: 3rem;
+        }
+        p {
+          display: block;
+          font-size: 1.5rem;
+          width: 50%;
+        }
+      }
+  
+      .dev {
+        span {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }

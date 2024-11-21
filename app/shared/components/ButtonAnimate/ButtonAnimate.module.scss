@@ -1,0 +1,115 @@
+// ButtonAnimate.module.scss
+
+@use 'sass:map';
+@use '../../../scss/animations/animations';
+@use '../../../scss/base/_mixinsfunc';
+@use '../../../scss/base/variables';
+
+.animatedCommon {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+  color: variables.$secondary;
+  font-size: 1.25rem;
+  font-weight: bold;
+  overflow: hidden;
+  transition: color 0.4s;
+  z-index: 10;
+  min-width: 150px;
+
+  .defaultText,
+  .hoverContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s, transform 0.4s;
+  }
+
+  .defaultText {
+    opacity: 1;
+  }
+
+  .hoverContent {
+    opacity: 0;
+    transform: translateY(20px);
+    color: #000;
+
+    svg {
+      margin-left: 8px;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    transition: width 0.4s;
+    z-index: -1;
+  }
+
+  &:before {
+    background: linear-gradient(120deg, variables.$secondary, #00aaff);
+    left: 50%;
+  }
+
+  &:after {
+    background: linear-gradient(120deg, #00aaff, variables.$secondary);
+    right: 50%;
+  }
+
+  &:hover {
+    color: white;
+
+    &:before,
+    &:after {
+      width: 50%;
+    }
+
+    .defaultText {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    .hoverContent {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.animatedLink {
+  border: 1px solid variables.$secondary; /* Solo para el Link */
+}
+
+.animatedButton {
+  border: 1px solid variables.$secondary;
+  min-height: 50px;  /* Ajuste de altura para el botón */
+}
+
+@include mixinsfunc.respond-to("tablet", 1023px) {
+  .animatedCommon {
+    min-width: 200px;
+    font-size: 1.5rem;
+  }
+}
+
+@include mixinsfunc.respond-to("desktop") {
+  .animatedCommon {
+    min-width: 300px;
+    font-size: 1.5rem;
+  }
+}

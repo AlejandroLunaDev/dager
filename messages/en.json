@@ -1,0 +1,152 @@
+{
+  "LandingPage": {
+    "links": {
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "tapHint": {
+      "text": "Tap any word"
+    },
+    "words": {
+      "hello": "hello",
+      "iam": "i am",
+      "ale": "ale"
+    }
+  },
+  "NavbarMenu":{
+    "links": {
+      "about": "About Me",
+      "projects": "My Projects",
+      "contact": "Contact Me"
+    }
+  },
+  "PortfolioLanding": {
+    "tapHint": {
+      "text": "Scroll Down"
+    }
+  },
+  "FirstSlide": {
+    "title": "Full-Stack Lead Developer",
+    "text": "Serial teller of terrible jokes!🥒"
+  },
+  "SecondSlide": {
+    "title": "About Me",
+    "design": {
+      "title": "Design",
+      "text": "🚀 As a frontend developer, I am passionate about blending creativity and functionality. My mission is to design intuitive and visually appealing interfaces, using cutting-edge tools to ensure an exceptional user experience and high-quality digital products."
+    },
+    "development": {
+      "title": "Development",
+      "text": "💫 I am convinced that the best way to master a skill is through constant practice. Creating is not only my job but also my learning method. Every project is an opportunity to innovate, learn, and refine my skills, always ensuring outstanding results."
+    }
+  },
+  "ThirdSlide": {
+    "title": "Skills",
+    "text": "Languages I speak, development and design tools I especially enjoy",
+    "h4": {
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "toolsLibraries": "Tools & Libraries",
+      "core": "Core",
+      "database": "Database",
+      "api": "API"
+    }
+  },
+  "FourthSlide": {
+    "title": "Experience",
+    "milestones": {
+      "0": {
+        "title": "Frontend Developer",
+        "period": "Sep 2024 - Oct 2024",
+        "company": "Workwise",
+        "description": "As part of a 6-person team, I contributed to the development of an application using Next.js, Tailwind, and Zustand, integrating a vacation management and attendance control system via APIs. My responsibilities included designing the user interface, creating employee and vacation request forms, and developing an interactive circular menu with Shadcn. Additionally, I collaborated closely with the UX/UI team to ensure the design aligned with the project's goals and requirements."
+      },
+      "1": {
+        "title": "Frontend Developer",
+        "period": "Aug 2024 - Sep 2024",
+        "company": "Mentos",
+        "description": "Developed layouts and core functionalities for mentor, review, and landing pages using React and Tailwind. Created a temporary backend with Node.js and MongoDB in the absence of a backend team, enabling continuous progress. Led daily stand-ups and coordinated a team of 12 to meet sprint deadlines, fostering collaboration and clear communication."
+      },
+      "2": {
+        "title": "Frontend Developer",
+        "period": "Jun 2024 - Jul 2024",
+        "company": "No-Country",
+        "description": "Led sprint planning and task distribution, collaborating closely with other team leads to ensure smooth integration. Resolved technical challenges and implemented TypeScript to enhance calendar functionality, working within a 15-person team to drive project success."
+      }
+    }
+  },
+  "FifthSlide": {
+  "links": {
+    "projects": {
+      "title": "Build & Create",
+      "description": "Design and build simple, intuitive, and scalable web products",
+      "button": {
+        "text": "View my projects",
+        "hoverText": "Go to Projects"
+      }
+    },
+    "cv": {
+      "title": "Curriculum Vitae",
+      "description": "Learn more about my professional experience and skills",
+      "button": {
+        "text": "Download Curriculum Vitae",
+        "hoverText": "Download CV"
+      }
+    }
+  }
+},
+"Projects": {
+  "title": "Projects",
+  "description": "Design and build simple, intuitive, and scalable web products",
+  "projects": {
+    "numberone": {
+      "name": "Easy Turnos",
+      "technologies": ["react", "typescript", "tailwind", "materialui"],
+      "description": "Easy Turnos is a site for professionals looking to manage appointments with their clients easily and quickly. This project came about through my participation in a work simulation at No-Country, where I collaborated with a team to develop an efficient and modern solution for appointment management.",
+      "demoLink": "https://easy-turnos.vercel.app/",
+      "githubLink": "https://github.com/NoCountrySimulacion/EasyTurnos/tree/frontend",
+      "background": "linear-gradient(0deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+    },
+    "numbertwo": {
+      "name": "SiLoUso",
+      "technologies": ["react", "typescript", "tailwind", "materialui", "express", "mongoDB"],
+      "description": "SiLoUso is a Full-Stack ecommerce project developed during my courses at Coderhouse. In this project, I faced the challenge of learning new technologies and applying all I had learned to launch a fully functional online store.",
+      "demoLink": "https://www.silouso.shop/",
+      "githubLink": "https://github.com/NoCountrySimulacion/SiLoUso/tree/frontend",
+      "background": "linear-gradient(180deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+    },
+    "numberthree": {
+      "name": "Windows 11 Clone",
+      "technologies": ["html", "css", "javascript", "sass"],
+      "description": "Windows11-Clone is a project developed entirely in JavaScript, where I tested my initial skills in the language. The goal was to create an interactive and engaging application that replicates the experience of the Windows 11 operating system.",
+      "demoLink": "https://alejandrolunadev.github.io/Windows11Clone/",
+      "githubLink": "https://github.com/NoCountrySimulacion/Windows-11-Clone/tree/frontend",
+      "background": "linear-gradient(0deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+    },
+    "numberfour": {
+      "name": "WorkWise",
+      "technologies": ["nextjs", "typescript", "zustand", "tailwind"],
+      "description": "It is a tool that facilitates human resource management through an innovative, intuitive, and practical design. It allows for employee registration, attendance control, justification, vacation, and leave management, with the objective of payroll processing and attendance control.",
+      "demoLink": "",
+      "githubLink": "https://github.com/AlejandroLunaDev/workwise",
+      "background": "linear-gradient(180deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+    }
+  }
+},
+"Contact": {
+  "title": "Let's build something incredible!",
+  "form": {
+    "title": "Send Me a Message",
+    "subtitle": "Do you have any questions, proposals, or just want to say hello? Feel free to reach out.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "button": {
+      "text": "Send",
+      "hoverText": "Send Message"
+    }
+  }
+}
+
+}

@@ -1,0 +1,43 @@
+@use 'sass:map';
+@use '../../../../../scss/animations/animations';
+@use '../../../../../scss/base/_mixinsfunc';
+@use '../../../../../scss/base/variables';
+
+.hero {
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: variables.$primary-dark;
+
+  height: 100dvh;
+  img {
+    width: 40vh;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+
+@include mixinsfunc.respond-to("tablet",1023px) {
+  .hero {
+    height: 100dvh;
+    img {
+      width: 40vh;
+      height: 30vh;
+    }
+  }
+}
+
+@include mixinsfunc.respond-to("desktop") {
+  .hero {
+    height: 100dvh;
+    img {
+      width: 80vh;
+      height: 30vh;
+    }
+  }
+}

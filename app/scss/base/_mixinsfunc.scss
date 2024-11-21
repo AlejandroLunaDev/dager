@@ -1,0 +1,42 @@
+@use 'sass:map';
+@use './variables' as var;
+
+@mixin flex($df: flex,$jc: center,$al: center,$fw: nowrap,) {
+    display: $df;
+    justify-content: $jc;
+    align-items: $al;
+/*     flex-wrap: $fw; */
+}
+
+
+@mixin apply-animation($isHover: false) {
+    @if $isHover == false {
+      animation-name: slide-up;
+      animation-duration: 0.7s;
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      animation-fill-mode: both;
+    } @else {
+    opacity: 0;
+      animation-name: fadeInLeft;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+
+      letter-spacing: -2px;
+    }
+  }
+  
+  @mixin respond-to($device, $max: null) {
+    $min-width: map.get(var.$breakpoints, $device);
+    @if $max {
+      @media (min-width: #{$min-width}) and (max-width: #{$max}) {
+        @content;
+      }
+    } @else {
+      @media (min-width: #{$min-width}) {
+        @content;
+      }
+    }
+  }
+  
+  

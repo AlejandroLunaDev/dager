@@ -28,30 +28,29 @@
   },
   "FirstSlide": {
     "title": "Full-Stack Lead Developer",
-    "text": "Serial teller of terrible jokes!🥒"
+    "text": "Serial teller of terrible jokes!"
   },
   "SecondSlide": {
     "title": "About Me",
     "design": {
       "title": "Design",
-      "text": "🚀 As a frontend developer, I am passionate about blending creativity and functionality. My mission is to design intuitive and visually appealing interfaces, using cutting-edge tools to ensure an exceptional user experience and high-quality digital products."
+      "text": "Hi! I’m Mariano, but in the matrix of the internet, I go by Dot Dager. I’m a full-stack developer, content creator, and a firm      believer that cats make the best coding partners (any bugs in my code are definitely their fault)."
     },
-    "development": {
-      "title": "Development",
-      "text": "💫 I am convinced that the best way to master a skill is through constant practice. Creating is not only my job but also my learning method. Every project is an opportunity to innovate, learn, and refine my skills, always ensuring outstanding results."
-    }
-  },
+    "SoundButton": {
+      "on": "Enable sound",
+      "off": "Disable sound"
+  }
+},
   "ThirdSlide": {
-    "title": "Skills",
-    "text": "Languages I speak, development and design tools I especially enjoy",
-    "h4": {
-      "languages": "Languages",
-      "frameworks": "Frameworks",
-      "toolsLibraries": "Tools & Libraries",
-      "core": "Core",
-      "database": "Database",
-      "api": "API"
+    "title": "My Interest",
+    "interests": {
+      "item1": "Programming - where creativity meets logic",
+      "item2": "Cats - the best coding partners",
+      "item3": "Guitars - the perfect instrument for coding",
+      "item4": "Philosophy - the source of all knowledge",
+      "item5": "Pickles - an obscene addition in my wettest dreams "
     }
+
   },
   "FourthSlide": {
     "title": "Experience",

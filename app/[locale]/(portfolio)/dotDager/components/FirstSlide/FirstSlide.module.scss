@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   background: variables.$primary-dark;
+  background: linear-gradient(0deg, variables.$color-primary 0%, variables.$primary-dark 50%);
 
   height: 100dvh;
   img {

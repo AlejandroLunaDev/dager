@@ -1,0 +1,120 @@
+@use 'sass:map';
+@use '../../../../../scss/base/variables';
+@use '../../../../../scss/base/_mixinsfunc.scss';
+@use '../../../../../scss/animations/animations';
+.skills {
+  
+
+  position: relative;
+  z-index: 7;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+@include mixinsfunc.respond-to('tablet', 1023px) {
+  .skills {
+    padding: 0 20px;
+    header {
+      margin-top: 25px;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    main {
+      flex-direction: column;
+  
+      .frontend,
+      .backend {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .frontendListIcon,
+      .backendListIcon {
+  
+        li {
+          figure {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      .frontendList,
+      .backendList {
+        li {
+          h4 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .large {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+}
+
+@include mixinsfunc.respond-to('desktop') {
+  .skills {
+    padding: 0 60px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    .interest {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 50px;
+      width: 100%;
+      gap: 30px;
+      z-index: 9999;
+      h1 {
+        color: variables.$secondary;
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          display: flex;
+          align-items: center;
+          align-items: flex-start;
+          gap: 10px;
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    
+    img {
+      width: 100vh;
+      height: 100vh;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .overlay {
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+  background: linear-gradient(0deg, variables.$color-primary 0%, variables.$primary-dark 70%);
+  opacity: 0.5;
+      pointer-events: none; 
+    }
+
+      }
+    }

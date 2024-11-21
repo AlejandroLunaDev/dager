@@ -15,13 +15,13 @@
     }
   },
   "NavbarMenu": {
-  "links": {
-    "about": "Sobre mí",
-    "projects": "Mis proyectos",
-    "contact": "Contáctame",
-    "home": "Inicio"
-  }
-},
+    "links": {
+      "about": "Sobre mí",
+      "projects": "Mis proyectos",
+      "contact": "Contáctame",
+      "home": "Inicio"
+    }
+  },
 
   "PortfolioLanding": {
     "tapHint": {
@@ -35,11 +35,7 @@
   "SecondSlide": {
     "design": {
       "title": "Diseño",
-      "text": "🚀 Como desarrollador frontend, me apasiona combinar creatividad y funcionalidad. Mi misión es diseñar interfaces intuitivas y visualmente atractivas, utilizando herramientas de vanguardia para garantizar una experiencia de usuario excepcional y productos digitales de alta calidad."
-    },
-    "development": {
-      "title": "Desarrollo",
-      "text": "💫 Estoy convencido de que la mejor manera de dominar una habilidad es a través de la práctica constante. Crear no solo es mi trabajo, sino también mi método de aprendizaje. Cada proyecto es una oportunidad para innovar, aprender y perfeccionar mis habilidades, siempre asegurando resultados sobresalientes."
+      "text": "¡Hola! Soy Mariano, pero en la matrix de internet me conocen como Dot Dager. Soy un desarrollador full-stack, creador de contenido y un firme creyente de que los gatos son los mejores compañeros de programación (cualquier bug en mi código es definitivamente culpa de ellos). Entre líneas de código y riffs de guitarra, disfruto filosofar sobre la vida, comer pepinillos como si fueran snacks gourmet y resolver problemas con la misma intensidad que un Sudoku en modo difícil. ¿Mi objetivo? Conquistar el mundo… del desarrollo, claro. Bienvenido/a a mi espacio, donde la programación, la creatividad y el caos organizado se encuentran."
     }
   },
   "ThirdSlide": {

@@ -1,17 +1,22 @@
 @use 'sass:map';
 @use '../../../../../scss/base/variables.scss';
 @use '../../../../../scss/base/_mixinsfunc.scss';
-@use '../../../../../scss/animations/animations';
+
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   padding: 0 20px;
   height: 100dvh;
+  background: variables.$primary-dark;
+
   header {
     h1 {
       color: variables.$secondary;
-      font-size: 2rem;
+      font-size: 4rem;
       letter-spacing: -3px;
       line-height: 1.6;
       font-weight: 800;
@@ -20,7 +25,28 @@
       text-align: center;
     }
   }
-  
-  
-}
 
+  iframe {
+    z-index: 1;
+    width: 40%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      to right,
+      rgba(variables.$color-primary, 0.8) 0%,
+      rgba(variables.$primary-dark, 0) 50%,
+      rgba(variables.$color-primary, 0.8) 100%
+    );
+  }
+}

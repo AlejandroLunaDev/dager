@@ -12,6 +12,7 @@ export default function FirstSlide() {
     <article className={styles.hero}>
         <Image src='/image/soyYo.jpg' width={500} height={500} alt='dotDager'></Image>
       <SliderParagraph title={t('title')} text= {t('text')}/>
+ 
 
     </article>
   );

@@ -53,27 +53,7 @@
 
   },
   "FourthSlide": {
-    "title": "Experience",
-    "milestones": {
-      "0": {
-        "title": "Frontend Developer",
-        "period": "Sep 2024 - Oct 2024",
-        "company": "Workwise",
-        "description": "As part of a 6-person team, I contributed to the development of an application using Next.js, Tailwind, and Zustand, integrating a vacation management and attendance control system via APIs. My responsibilities included designing the user interface, creating employee and vacation request forms, and developing an interactive circular menu with Shadcn. Additionally, I collaborated closely with the UX/UI team to ensure the design aligned with the project's goals and requirements."
-      },
-      "1": {
-        "title": "Frontend Developer",
-        "period": "Aug 2024 - Sep 2024",
-        "company": "Mentos",
-        "description": "Developed layouts and core functionalities for mentor, review, and landing pages using React and Tailwind. Created a temporary backend with Node.js and MongoDB in the absence of a backend team, enabling continuous progress. Led daily stand-ups and coordinated a team of 12 to meet sprint deadlines, fostering collaboration and clear communication."
-      },
-      "2": {
-        "title": "Frontend Developer",
-        "period": "Jun 2024 - Jul 2024",
-        "company": "No-Country",
-        "description": "Led sprint planning and task distribution, collaborating closely with other team leads to ensure smooth integration. Resolved technical challenges and implemented TypeScript to enhance calendar functionality, working within a 15-person team to drive project success."
-      }
-    }
+    "title": "Experience"
   },
   "FifthSlide": {
   "links": {
@@ -134,10 +114,10 @@
   }
 },
 "Contact": {
-  "title": "Let's build something incredible!",
+  "title": "Speak now or forever hold your peace",
   "form": {
-    "title": "Send Me a Message",
-    "subtitle": "Do you have any questions, proposals, or just want to say hello? Feel free to reach out.",
+    "title": "One message won't save the world... but give it a shot",
+    "subtitle": "Existential crises, indecent proposals, or just a casual 'hi'? This is your time to shine—or completely blow it.",
     "name": "Name",
     "email": "Email",
     "message": "Message",

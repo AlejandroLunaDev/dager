@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
-
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube, FaDiscord } from 'react-icons/fa';
 import styles from './ContactAction.module.scss';
+
 export interface Item {
   id: number;
   name: string;
 }
-export default function ContactAction({ items: items }: { items: Item[] }) {
+
+export default function ContactAction({ items }: { items: Item[] }) {
   const connectVariants = {
     closed: {
       opacity: 0,
@@ -23,23 +24,45 @@ export default function ContactAction({ items: items }: { items: Item[] }) {
       }
     }
   };
+
   return (
     <motion.div className={styles.connect} variants={connectVariants}>
       <p>Connect</p>
       <div className={styles.icons}>
+        {/* GitHub */}
         <a
-          href='https://github.com/MarianoVilla'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://github.com/MarianoVilla"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FaGithub size={35} />
+          <FaGithub size={25} />
         </a>
+
+        {/* LinkedIn */}
         <a
-          href='https://www.linkedin.com/in/mariano-luis-villa/'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://www.linkedin.com/in/mariano-luis-villa/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FaLinkedin size={35} />
+          <FaLinkedin size={25} />
+        </a>
+
+        {/* YouTube */}
+        <a
+          href="https://www.youtube.com/channel/tu-canal"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaYoutube size={25} />
+        </a>
+
+        {/* Discord */}
+        <a
+          href="https://discord.com/invite/tu-invitacion"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaDiscord size={25} />
         </a>
       </div>
     </motion.div>

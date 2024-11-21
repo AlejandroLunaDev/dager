@@ -29,7 +29,6 @@ export default function LanguageSwitcher() {
   const languages = [
     { code: 'en', flag: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg', alt: 'English' },
     { code: 'es', flag: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg', alt: 'Español' },
-    { code: 'pt', flag: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg', alt: 'Português' },
   ];
 
   return (

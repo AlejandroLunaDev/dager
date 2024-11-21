@@ -1,24 +1,11 @@
 {
-  "LandingPage": {
-    "links": {
-      "about": "About",
-      "projects": "Projects",
-      "contact": "Contact"
-    },
-    "tapHint": {
-      "text": "Tap any word"
-    },
-    "words": {
-      "hello": "hello",
-      "iam": "i am",
-      "ale": "ale"
-    }
-  },
   "NavbarMenu":{
     "links": {
       "about": "About Me",
-      "projects": "My Projects",
-      "contact": "Contact Me"
+      "interest": "My Interests",
+      "experience": "My Experience",
+      "contact": "Contact Me",
+      "home": "Home"
     }
   },
   "PortfolioLanding": {
@@ -75,46 +62,8 @@
     }
   }
 },
-"Projects": {
-  "title": "Projects",
-  "description": "Design and build simple, intuitive, and scalable web products",
-  "projects": {
-    "numberone": {
-      "name": "Easy Turnos",
-      "technologies": ["react", "typescript", "tailwind", "materialui"],
-      "description": "Easy Turnos is a site for professionals looking to manage appointments with their clients easily and quickly. This project came about through my participation in a work simulation at No-Country, where I collaborated with a team to develop an efficient and modern solution for appointment management.",
-      "demoLink": "https://easy-turnos.vercel.app/",
-      "githubLink": "https://github.com/NoCountrySimulacion/EasyTurnos/tree/frontend",
-      "background": "linear-gradient(0deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
-    },
-    "numbertwo": {
-      "name": "SiLoUso",
-      "technologies": ["react", "typescript", "tailwind", "materialui", "express", "mongoDB"],
-      "description": "SiLoUso is a Full-Stack ecommerce project developed during my courses at Coderhouse. In this project, I faced the challenge of learning new technologies and applying all I had learned to launch a fully functional online store.",
-      "demoLink": "https://www.silouso.shop/",
-      "githubLink": "https://github.com/NoCountrySimulacion/SiLoUso/tree/frontend",
-      "background": "linear-gradient(180deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
-    },
-    "numberthree": {
-      "name": "Windows 11 Clone",
-      "technologies": ["html", "css", "javascript", "sass"],
-      "description": "Windows11-Clone is a project developed entirely in JavaScript, where I tested my initial skills in the language. The goal was to create an interactive and engaging application that replicates the experience of the Windows 11 operating system.",
-      "demoLink": "https://alejandrolunadev.github.io/Windows11Clone/",
-      "githubLink": "https://github.com/NoCountrySimulacion/Windows-11-Clone/tree/frontend",
-      "background": "linear-gradient(0deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
-    },
-    "numberfour": {
-      "name": "WorkWise",
-      "technologies": ["nextjs", "typescript", "zustand", "tailwind"],
-      "description": "It is a tool that facilitates human resource management through an innovative, intuitive, and practical design. It allows for employee registration, attendance control, justification, vacation, and leave management, with the objective of payroll processing and attendance control.",
-      "demoLink": "",
-      "githubLink": "https://github.com/AlejandroLunaDev/workwise",
-      "background": "linear-gradient(180deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
-    }
-  }
-},
 "Contact": {
-  "title": "Speak now or forever hold your peace",
+  "title": "\"Speak now or forever hold your peace\"",
   "form": {
     "title": "One message won't save the world... but give it a shot",
     "subtitle": "Existential crises, indecent proposals, or just a casual 'hi'? This is your time to shine—or completely blow it.",
@@ -127,5 +76,4 @@
     }
   }
 }
-
 }

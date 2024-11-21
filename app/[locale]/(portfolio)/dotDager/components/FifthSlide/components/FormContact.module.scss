@@ -134,10 +134,16 @@
           }
         }
           img {
-            width: 20dvw;
-            height: 20dvh;
+            width: 30dvw;
+            height: 30dvh;
             object-fit: cover;
             border-radius: 20px;
+            margin: 30px;
+          }
+          p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            text-align: center;
           }
       }
     }

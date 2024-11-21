@@ -21,9 +21,11 @@ export default function NavigationMenu() {
   }, [pathname]);
 
   const items: { id: number; name: string; route: string }[] = [
-    { id: 1, name: t('links.projects'), route: '/projects' },
-    { id: 2, name: t('links.about'), route: '/about' },
-    { id: 3, name: t('links.contact'), route: '/contact' },
+    { id: 1, name: t('links.home'), route: '#home' }, // Sección "home"
+    { id: 1, name: t('links.about'), route: '#about' }, // Sección "about"
+    { id: 2, name: t('links.interest'), route: '#interest' }, // Sección "interest"
+    { id: 3, name: t('links.experience'), route: '#experience' }, // Sección "experience"
+    { id: 4, name: t('links.contact'), route: '#contact' } // Sección "contact"
   ];
 
   const menuVariants = {

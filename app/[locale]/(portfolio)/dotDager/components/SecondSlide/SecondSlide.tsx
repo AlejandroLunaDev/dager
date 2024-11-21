@@ -15,14 +15,9 @@ export default function SecondSlide() {
 
   return (
     <section className={styles.info}>
-
-
       <div className={styles.design}>
         <div className={styles.videoContainer}>
-          <button onClick={toggleAudio} className={styles.toggleButton}>
-            
- <span className={styles.text}>{audioEnabled ? t('SoundButton.off') : t('SoundButton.on')}</span>
-          </button>
+ 
           <video
             ref={videoRef}
             autoPlay
@@ -31,10 +26,15 @@ export default function SecondSlide() {
             playsInline
             src="/video/dotDager.mp4"
           ></video>
+                   <button onClick={toggleAudio} className={styles.toggleButton}>
+            <span className={styles.text}>
+              {audioEnabled ? t('SoundButton.off') : t('SoundButton.on')}
+            </span>
+          </button>
         </div>
         <div className={styles.text}>
-        <h1>{t('title')}</h1>
-        <p>{t('design.text')}</p>
+          <h1>{t('title')}</h1>
+          <p>{t('design.text')}</p>
         </div>
       </div>
     </section>

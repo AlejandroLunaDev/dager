@@ -18,16 +18,16 @@ const t = useTranslations('PortfolioLanding');
         <FirstSlide />
         <TapHint paragraphText={t('tapHint.text')} Icon={BsMouse} />
       </section>
-      <section>
+      <section id='about'>
         <SecondSlide />
       </section>
-      <section>
+      <section id='interest'>
         <ThirdSlide />
       </section>
-      <section>
+      <section id='experience'>
         <FourthSlide />
       </section>
-      <section>
+      <section id='contact'>
         <FifthSlide />
       </section>
     </>

@@ -21,33 +21,16 @@ export default function FormContact() {
     message: ''
   });
   const [submitted, setSubmitted] = useState<boolean>(false);
-  const [error, setError] = useState<boolean>(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    try {
-      const response = await fetch('https://formspree.io/f/mnnanarl', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        setSubmitted(true);
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setError(true);
-      }
-    } catch (err) {
-      setError(true);
-    }
+    setSubmitted(true);
+    setFormData({ name: '', email: '', message: '' }); // Reinicia los datos
   };
 
   const t = useTranslations('Contact');
@@ -98,35 +81,34 @@ export default function FormContact() {
             <ButtonAnimate type="submit" hoverText={t('form.button.hoverText')}>
               {t('form.button.text')}
             </ButtonAnimate>
-            {error && <p className={styles.error}>{t('form.error')}</p>}
             <div className={styles.iconsform}>
               <Link
-                href="https://github.com/AlejandroLunaDev"
+                href="https://github.com/MarianoVilla"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaGithub size={30} style={{ color: '#43efff' }} />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/alejandro-luna-dev"
+                href="https://www.linkedin.com/in/mariano-luis-villa/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin size={30} style={{ color: '#43efff' }} />
               </Link>
               <Link
-                href="https://www.youtube.com/channel/your-channel-id"
+                href="https://www.youtube.com/@DotDager"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaYoutube size={30} style={{ color: '#FF0000' }} />
+                <FaYoutube size={30} />
               </Link>
               <Link
-                href="https://discord.gg/your-invite-link"
+                href="https://discord.gg/4NFk6TamAB"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaDiscord size={30} style={{ color: '#7289DA' }} />
+                <FaDiscord size={30} />
               </Link>
             </div>
           </form>
@@ -144,32 +126,32 @@ export default function FormContact() {
         <Image width={500} height={500} src="/image/despuesdelas12.png" alt="logo" />
         <div className={styles.icons}>
           <Link
-            href="https://github.com/AlejandroLunaDev"
+            href="https://github.com/MarianoVilla"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub size={40} style={{ color: '#ffff' }} />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/alejandro-luna-dev"
+            href="https://www.linkedin.com/in/mariano-luis-villa/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin size={40} style={{ color: '#ffff' }} />
           </Link>
           <Link
-            href="https://www.youtube.com/channel/your-channel-id"
+            href="https://www.youtube.com/@DotDager"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaYoutube size={40}  />
+            <FaYoutube size={40} />
           </Link>
           <Link
-            href="https://discord.gg/your-invite-link"
+            href="https://discord.gg/4NFk6TamAB"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaDiscord size={40}  />
+            <FaDiscord size={40} />
           </Link>
         </div>
       </div>

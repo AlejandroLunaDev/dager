@@ -3,7 +3,7 @@
     "links": {
       "about": "About Me",
       "interest": "My Interests",
-      "experience": "My Experience",
+      "projects": "My Projects",
       "contact": "Contact Me",
       "home": "Home"
     }
@@ -39,7 +39,22 @@
     }
   },
   "FourthSlide": {
-    "title": "Experience"
+    "title": "Projects",
+    "projects": {
+      "project1": {
+        "title": "Gato que Araña",
+        "description": "A game where the cat rules and you're just its toy. You thought you were in control, but the only one winning here is the cat."
+      },
+      "project2": {
+        "title": "Princi-Pito",
+        "description": "A website so simple it'll make you question your life choices. Did you really want to see this? Well, here you are, trapped."
+      },
+      "project3": {
+        "title": "LumberJack",
+        "description": "The game that consumes your life in an infinite loop of addictive madness. How did you stop playing? I don’t know, there’s probably no hope left."
+      }
+    }
+
   },
   "FifthSlide": {
     "links": {

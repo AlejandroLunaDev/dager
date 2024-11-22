@@ -3,7 +3,7 @@
     "links": {
       "about": "Sobre mí",
       "interest": "Mis intereses",
-      "experience": "Mi experiencia",
+      "projects": "Mis Proyectos",
       "contact": "Contáctame",
       "home": "Inicio"
     }
@@ -39,7 +39,23 @@
     }
   },
   "FourthSlide": {
-    "title": "Experiencia"
+    "title": "Proyectos",
+    "projects": {
+      "project1": {
+        "title": "Gato que Araña",
+        "description": "Un juego donde el gato manda y tú solo eres su juguete. Pensaste que controlabas, pero aquí el único que gana es el gato."
+      },
+      "project2": {
+        "title": "Princi-Pito",
+        "description": "Un sitio tan simple que te hará cuestionar tus decisiones. ¿Realmente querías ver esto? Pues aquí estás, atrapado."
+      },
+      "project3": {
+        "title": "LumberJack",
+        "description": "El juego que te consume la vida en un loop infinito de vicio cocainomano. ¿Cómo dejaste de jugar? No lo sé, probablemente ya no haya esperanza."
+      }
+    }
+
+    
   },
   "FifthSlide": {
     "links": {

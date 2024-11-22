@@ -24,7 +24,7 @@ export default function NavigationMenu() {
     { id: 1, name: t('links.home'), route: '#home' }, // Sección "home"
     { id: 1, name: t('links.about'), route: '#about' }, // Sección "about"
     { id: 2, name: t('links.interest'), route: '#interest' }, // Sección "interest"
-    { id: 3, name: t('links.experience'), route: '#experience' }, // Sección "experience"
+    { id: 3, name: t('links.projects'), route: '#projects' }, // Sección "experience"
     { id: 4, name: t('links.contact'), route: '#contact' } // Sección "contact"
   ];
 

@@ -24,7 +24,7 @@ const t = useTranslations('PortfolioLanding');
       <section id='interest'>
         <ThirdSlide />
       </section>
-      <section id='experience'>
+      <section id='projects'>
         <FourthSlide />
       </section>
       <section id='contact'>

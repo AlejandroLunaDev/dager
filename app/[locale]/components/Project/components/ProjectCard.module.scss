@@ -1,0 +1,47 @@
+@use 'sass:map';
+@use '../../../../scss/base/variables.scss';
+@use '../../../../scss/base/_mixinsfunc.scss';
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: variables.$background-dim2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    .thumbnail {
+      width: 100%;
+      height: 40vh;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin: 10px 0;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  
+    button {
+      padding: 10px 20px;
+      background-color: variables.$color-primary;
+      color:variables.$primary-bright;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+  
+      &:hover {
+        background-color: variables.$color-primary-dim;
+      }
+    }
+  }
+  

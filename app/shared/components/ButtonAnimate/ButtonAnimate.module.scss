@@ -43,7 +43,7 @@
   .hoverContent {
     opacity: 0;
     transform: translateY(20px);
-    color: #000;
+    color: variables.$primary-bright;
 
     svg {
       margin-left: 8px;
@@ -62,12 +62,11 @@
   }
 
   &:before {
-    background: linear-gradient(120deg, variables.$secondary, #00aaff);
-    left: 50%;
+    background: linear-gradient(0deg, variables.$color-primary, variables.$secondary);
   }
 
   &:after {
-    background: linear-gradient(120deg, #00aaff, variables.$secondary);
+  background: linear-gradient(0deg, variables.$color-primary, variables.$secondary);
     right: 50%;
   }
 

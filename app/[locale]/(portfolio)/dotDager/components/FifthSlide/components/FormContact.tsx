@@ -81,41 +81,12 @@ export default function FormContact() {
             <ButtonAnimate type="submit" hoverText={t('form.button.hoverText')}>
               {t('form.button.text')}
             </ButtonAnimate>
-            <div className={styles.iconsform}>
-              <Link
-                href="https://github.com/MarianoVilla"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size={30} style={{ color: '#43efff' }} />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/mariano-luis-villa/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={30} style={{ color: '#43efff' }} />
-              </Link>
-              <Link
-                href="https://www.youtube.com/@DotDager"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaYoutube size={30} />
-              </Link>
-              <Link
-                href="https://discord.gg/4NFk6TamAB"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaDiscord size={30} />
-              </Link>
-            </div>
           </form>
         ) : (
           <div className={styles.thankYouMessage}>
             <h2>{t('form.thankYouTitle')}</h2>
             <p>{t('form.thankYouMessage')}</p>
+
           </div>
         )}
       </div>
@@ -123,36 +94,39 @@ export default function FormContact() {
         <div>
           <p>{t('title')}</p>
         </div>
+        <div className={styles.logo}>
         <Image width={500} height={500} src="/image/despuesdelas12.png" alt="logo" />
+
         <div className={styles.icons}>
           <Link
             href="https://github.com/MarianoVilla"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub size={40} style={{ color: '#ffff' }} />
+            <FaGithub style={{ color: '#ffff' }} />
           </Link>
           <Link
             href="https://www.linkedin.com/in/mariano-luis-villa/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={40} style={{ color: '#ffff' }} />
+            <FaLinkedin  style={{ color: '#ffff' }} />
           </Link>
           <Link
             href="https://www.youtube.com/@DotDager"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaYoutube size={40} />
+            <FaYoutube />
           </Link>
           <Link
             href="https://discord.gg/4NFk6TamAB"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaDiscord size={40} />
+            <FaDiscord  />
           </Link>
+        </div>
         </div>
       </div>
     </div>

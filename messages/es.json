@@ -65,10 +65,12 @@
     "title": "\"Habla ahora o calla para siempre\"",
     "form": {
       "title": "Un mensaje no salvará al mundo... pero inténtalo",
-      "subtitle": "Crisis existenciales, propuestas indecentes o simplemente un 'hola'? Este es tu momento para brillar—o arruinarlo completamente.",
+      "subtitle": "Crisis existenciales, propuestas indecentes o simplemente un 'hola'? Este es tu momento para brillar o arruinarlo completamente.",
       "name": "Nombre",
       "email": "Correo electrónico",
       "message": "Mensaje",
+      "thankYouTitle": "¡Mensaje enviado!",
+      "thankYouMessage": "Ahora me voy a tomar un descanso... o a buscar más gatos en internet.",
       "button": {
         "text": "Enviar",
         "hoverText": "Enviar mensaje"

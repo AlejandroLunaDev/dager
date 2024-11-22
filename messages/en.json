@@ -1,5 +1,5 @@
 {
-  "NavbarMenu":{
+  "NavbarMenu": {
     "links": {
       "about": "About Me",
       "interest": "My Interests",
@@ -26,8 +26,8 @@
     "SoundButton": {
       "on": "Enable sound",
       "off": "Disable sound"
-  }
-},
+    }
+  },
   "ThirdSlide": {
     "title": "My Interest",
     "interests": {
@@ -37,43 +37,45 @@
       "item4": "Philosophy - the source of all knowledge",
       "item5": "Pickles - an obscene addition in my wettest dreams "
     }
-
   },
   "FourthSlide": {
     "title": "Experience"
   },
   "FifthSlide": {
-  "links": {
-    "projects": {
-      "title": "Build & Create",
-      "description": "Design and build simple, intuitive, and scalable web products",
-      "button": {
-        "text": "View my projects",
-        "hoverText": "Go to Projects"
+    "links": {
+      "projects": {
+        "title": "Build & Create",
+        "description": "Design and build simple, intuitive, and scalable web products",
+        "button": {
+          "text": "View my projects",
+          "hoverText": "Go to Projects"
+        }
+      },
+      "cv": {
+        "title": "Curriculum Vitae",
+        "description": "Learn more about my professional experience and skills",
+        "button": {
+          "text": "Download Curriculum Vitae",
+          "hoverText": "Download CV"
+        }
       }
-    },
-    "cv": {
-      "title": "Curriculum Vitae",
-      "description": "Learn more about my professional experience and skills",
+    }
+  },
+  "Contact": {
+    "title": "\"Speak now or forever hold your peace\"",
+    "form": {
+      "title": "One message won't save the world... but give it a shot",
+      "subtitle": "Existential crises, indecent proposals, or just a casual 'hi'? This is your time to shine or completely blow it.",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "thankYouTitle": "Message sent!",
+      "thankYouMessage": "Now I'll take a break... or go search for more cats on the internet.",
+
       "button": {
-        "text": "Download Curriculum Vitae",
-        "hoverText": "Download CV"
+        "text": "Send",
+        "hoverText": "Send Message"
       }
     }
   }
-},
-"Contact": {
-  "title": "\"Speak now or forever hold your peace\"",
-  "form": {
-    "title": "One message won't save the world... but give it a shot",
-    "subtitle": "Existential crises, indecent proposals, or just a casual 'hi'? This is your time to shine—or completely blow it.",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "button": {
-      "text": "Send",
-      "hoverText": "Send Message"
-    }
-  }
-}
 }

@@ -1,4 +1,4 @@
-'use client';
+
 
 import FormContact from './components/FormContact';
 
@@ -11,3 +11,4 @@ export default function FifthSlide() {
     </section>
   )
 }
+

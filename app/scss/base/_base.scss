@@ -15,6 +15,7 @@ html {
 
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+
 }
 
 
@@ -24,7 +25,7 @@ section {
   height: 100dvh;
   background: variables.$primary-dark;
   scroll-snap-align: center;
-  scroll-snap-stop: always;
+  scroll-snap-stop: normal;
 }
 
 a {

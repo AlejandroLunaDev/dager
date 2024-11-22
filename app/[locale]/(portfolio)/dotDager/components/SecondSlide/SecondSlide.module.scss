@@ -4,10 +4,41 @@
 
 // Variables de colores y tipografía para reutilizar
 $color-info-background: variables.$primary-dark;
-$design-font-size: 2rem;
+$design-font-size: 0.5rem;
 $dev-font-size: 1rem;
 $letter-spacing: 2px;
 $font-weight-bold: 900;
+
+// Estilos comunes reutilizables
+%common-h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  letter-spacing: $letter-spacing;
+  font-weight: $font-weight-bold;
+  color: variables.$secondary;
+  margin-bottom: 20px;
+}
+
+%common-toggleButton {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: url('/image/botonaudio.png');
+  background-size: cover;
+  background-position: center;
+  color: variables.$primary-bright;
+  font-weight: 700;
+  border: none;
+  width: 230px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
 
 .info {
   display: flex;
@@ -18,122 +49,119 @@ $font-weight-bold: 900;
   padding: 1rem;
   background: linear-gradient(180deg, variables.$color-primary 0%, variables.$primary-dark 70%);
 
-
-  .design,
-  .dev {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    object-fit: contain;
-
-    p {
-      font-size: $dev-font-size;
-      color: variables.$primary-bright;
-      line-height: 2rem;
-      text-align: start;
-      display: none;
-    }
+  h1 {
+    @extend %common-h1;
   }
 
-  // .design - Estilo específico para diseño
   .design {
-    flex-direction: row;
-    justify-content: center;
-
-    video {
+    .videoContainer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       width: 100%;
-      height: 100%;
-      object-fit: contain;
+
+      video {
+        height: 50vh;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      .toggleButton {
+        @extend %common-toggleButton;
+        margin-top: 20px;
+
+        p {
+          width: 50%;
+          margin: 0;
+          text-align: center;
+        }
+      }
     }
 
+    .text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        @extend %common-h1;
+        display: none;
+      }
+
+      p {
+        display: none;
+        font-size: 0.8rem;
+        line-height: 2rem;
+      }
+    }
   }
-
-  // .dev - Estilo específico para desarrollo
-
 }
 
-@include mixinsfunc.respond-to("tablet",1023px) {
+@include mixinsfunc.respond-to("tablet", 1023px) {
   .info {
     flex-direction: row;
-    .design {
-      span {
-        font-size: 3rem;
-      }
-      p {
-        font-size: 1.5rem;
-      }
-    }
 
   }
 }
 
 @include mixinsfunc.respond-to("desktop") {
-    .info {
-      .design {
-        .videoContainer {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          width: 50%;
-          video {
-            width: 40vh;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 10px;
-          }
-          .toggleButton {
-            display: flex;
-            justify-content: start;
-            align-items: center;
-          background-image:url('/image/botonaudio.png');
-          background-size: cover;
-          background-position: center;
-            color: variables.$primary-bright;
-            font-weight: 700;
-            border: none;
-            width: 200px;
-            height: 50px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            margin-top: 20px;
-            p {
-              width: 50%;  /* Esto asegura que el texto ocupe solo el 50% del ancho */
-              margin: 0;    /* Elimina márgenes para que el texto ocupe correctamente el 50% */
-              text-align: center; /* Alinea el texto en el centro del área asignada */
-            }
-            &:hover {
-            transform: scale(1.1);
-            opacity: 0.8;
-       
-            }
-          }
-          
+  .info {
+    flex-direction: row;
+
+    h1 {
+      display: none;
+    }
+
+    .design {
+      display: flex;
+      flex-direction: row;
+
+      .videoContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+
+        video {
+          width: 40vh;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 10px;
         }
-        .text {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          h1 {
-            text-transform: capitalize;
-            font-size: 3.5rem;
-            letter-spacing: $letter-spacing;
-            font-weight: $font-weight-bold;
-            color: variables.$secondary;
-            margin-bottom: 20px;
-          }
 
-          p{
+        .toggleButton {
+          @extend %common-toggleButton;
+          margin-top: 20px;
 
-            display: block;
-            font-size: 1.5rem;
-            line-height: 3rem;
+          p {
+            width: 50%;
+            margin: 0;
+            text-align: center;
           }
+        }
+      }
+
+      .text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          @extend %common-h1;
+          display: block;
+          font-size: 3.5rem;
+        }
+
+        p {
+          display: block;
+          font-size: 1.5rem;
+          line-height: 3rem;
         }
       }
     }
   }
+}

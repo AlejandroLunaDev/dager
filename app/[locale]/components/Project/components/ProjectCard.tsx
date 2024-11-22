@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ thumbnail, title, description
       />
       <h2>{title}</h2>
       <p>{description}</p>
-      <button onClick={onViewDemo}>View Demo</button>
+      <button onClick={onViewDemo}>Demo</button>
     </div>
   );
 };

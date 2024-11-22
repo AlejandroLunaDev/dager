@@ -1,11 +1,10 @@
-import '../../scss/globals.scss';
 import { Metadata } from 'next';
 import Navbar from '@/app/shared/navbar/Navbar';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import '../../scss/globals.scss'
+import '../scss/globals.scss';
 
 export const metadata: Metadata = {
   title: 'Mariano Luis Villa',
